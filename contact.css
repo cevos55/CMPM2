@@ -1,0 +1,251 @@
+body{
+    margin-top: 80px; /* Hauteur de l'en-tête */
+}
+.couverture {
+    background-image: url('..image/home3.jpg'); 
+}
+
+/* zone 2 */
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.myform{
+    display: flex;
+    gap: 10px;
+}
+
+.contact-item {
+    flex: 1 1 calc(25% - 40px);
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-item img {
+    max-width: 100%;
+    height: auto;
+}
+.contact-item p, h1{
+    text-align: center;
+}
+.paragraphe{
+    text-align: center;
+}
+.contact-item .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+@media screen and (max-width: 768px) {
+    .contact-item {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-item {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* formulaire et texte */
+
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+} */
+
+.section2 {
+    display: flex;
+    background-color: #08a916;
+    padding: 85px 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  /* Align items vertically in the center */
+    min-height: 100vh;  /* Ensure the section takes at least the full viewport height */
+}
+
+.section2 .text-container {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+    color: white;
+}
+
+.section2 .text-container p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.section2 .form-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.section2 h1 {
+    font-family: 'Poppins', sans-serif, 'arial';
+    font-weight: 600;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section2 h4 {
+    font-family: 'Roboto', sans-serif, 'arial';
+    font-weight: 400;
+    font-size: 20px;
+    color: #9b9b9b;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #999;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    width: 100%;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+.styled-input label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #fff;
+    color: black;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+.input-container {
+    width: 100%;
+    margin: 20px 0 25px 0;
+}
+
+.submit-btn {
+    align-content: center;
+    align-self: center;
+    float: right;
+    padding: 7px 35px;
+    border-radius: 60px;
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(107, 2, 2, 0.06),
+              0 2px 10px 0 rgba(107, 2, 2, 0.06);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+              0 1px 1px 0 rgba(0,0,0,0.09);
+}
+
+@media (max-width: 768px) {
+    .section2 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .section2 .text-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+}
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+  color: rgb(116, 6, 8);
+  font-style: normal;
+}
+.section2 {
+    padding: 85px 40px; /* Ajout de padding pour les côtés */
+    box-sizing: border-box;
+    display: flex;
+    background-color: #08a916;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Align items vertically in the center */
+    min-height: 100vh; /* Ensure the section takes at least the full viewport height */
+}
+
+.section2 .text-container {
+    margin: 0 15px; /* Ajout de marge pour éviter que les conteneurs touchent les extrémités */
+}
+.form-container{
+    margin: 0 40px;
+}

@@ -1,0 +1,530 @@
+body {
+    overflow-x: hidden;
+}
+
+/* code css pour pour presenter les formations */
+        .intitule {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #formations {
+            padding: 50px 20px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .formation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease, transform 1s ease;
+            width: 100%;
+            max-width: 1200px;
+        }
+        
+        .formation.reverse .formation-content {
+            flex-direction: row-reverse;
+        }
+        
+        .formation-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+        }
+        
+        .formation-img {
+            width: 350px;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .formation-img:hover {
+            transform: scale(1.05);
+        }
+        
+        .formation-text {
+            max-width: 600px;
+        }
+        
+        .formation-text h2 {
+            color: green;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        
+        .formation-text h3 {
+            color: green;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        
+        .formation-text ul {
+            padding-left: 20px;
+            text-align: left; /* Align list text to the left for better readability */
+        }
+        
+        .formation-text ul li {
+            margin-bottom: 5px;
+            font-size: 16px;
+            color: #555;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .formation-content {
+                flex-direction: column;
+            }
+        
+            .reverse .formation-content {
+                flex-direction: column;
+            }
+        
+            .formation-img {
+                margin: 0 0 20px 0;
+            }
+        
+            .reverse .formation-img {
+                margin: 0 0 20px 0;
+            }
+        }
+        
+        /* Animation classes */
+        .formation.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* style pour commentaire */
+
+
+/* Styles for testimonial section */
+.testimonial-container {
+    background-color: #f1f1f1;
+    padding: 20px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-containe {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.testimonial {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial-name {
+    color: #08a916;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.testimonial-text {
+    color: #333;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.5;
+}
+.see-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.more-students {
+    background-color: #08a916;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.more-students:hover {
+    background-color: da;
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .testimonial-container {
+        padding: 20px;
+    }
+
+    .testimonial {
+        padding: 15px;
+    }
+
+    .testimonial-name {
+        font-size: 20px;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+    }
+}
+
+
+        /* style pour presenter le CMPM en quelques chiffres */
+        .cmpm-chiffres-container {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            background-color: #fff;
+            text-align: center;
+            margin-top: 50px;
+            
+        }
+        .cmpm-chiffres-container .bloc3{
+            color: #08a916;
+        }
+        .cmpm-chiffres-container .statistics-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            gap: 40px;
+        }
+        
+        .cmpm-chiffres-container .statistic {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .cmpm-chiffres-container .count {
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .cmpm-chiffres-container .label {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #777;
+        }
+
+
+        /* ce style est pour la section de la presentation du CMPM */
+
+        /* Style pour la section des objectifs */
+.objectives {
+    padding: 50px 0; /* Espacement en haut et en bas de la section */
+    text-align: center; /* Centre le contenu horizontalement */
+    
+  }
+  
+  /* Style pour le titre principal */
+  .objectives h2 {
+    margin-bottom: 20px; /* Espacement en bas du titre */
+  }
+  
+  /* Style pour le sous-titre */
+  .objectives h5 {
+    color: #666; /* Couleur du texte */
+    margin-bottom: 40px; /* Espacement en bas du sous-titre */
+  }
+  
+  /* Style pour le conteneur des objectifs */
+  .objective-container {
+    display: flex; /* Affiche les objectifs en ligne */
+    justify-content: space-between; /* Les objectifs sont répartis de manière égale sur l'axe horizontal */
+    flex-wrap: wrap; /* Permet aux objectifs de passer à la ligne suivante si l'espace est insuffisant */
+    gap: 20px; /* Espacement entre les objectifs */
+  }
+  
+  /* Style pour chaque objectif */
+  .objective {
+    position: relative; /* Position relative pour que les numéros puissent être positionnés absolument par rapport à ce conteneur */
+    width: calc(25% - 20px); /* Largeur de chaque objectif avec une marge */
+    padding: 20px; /* Espacement intérieur */
+    background-color: #fff; /* Couleur de fond */
+    border: 2px solid #08a916; /* Bordure verte */
+    border-radius: 20px; /* Coins arrondis */
+    color: #333; /* Couleur du texte */
+    box-sizing: border-box; /* La taille inclut les bordures et les rembourrages */
+    text-align: center; /* Centre le contenu horizontalement */
+    opacity: 0; /* Initialement caché pour l'animation */
+    transform: translateY(50px); /* Déplacé vers le bas pour l'animation */
+    transition: opacity 0.5s ease, transform 2.5s ease; /* Transition pour l'animation */
+  }
+  
+  /* Style pour le numéro à l'extérieur de chaque objectif */
+  .number {
+    position: absolute; /* Position absolue par rapport à l'objectif */
+    top: -15px; /* Position au-dessus de l'objectif */
+    left: calc(50% - 15px); /* Centre horizontalement */
+    width: 30px; /* Largeur du cercle */
+    height: 30px; /* Hauteur du cercle */
+    background-color: #08a916; /* Couleur de fond verte */
+    color: #fff; /* Couleur du texte */
+    border-radius: 50%; /* Forme de cercle */
+    text-align: center; /* Centre le numéro horizontalement */
+    line-height: 30px; /* Centre le numéro verticalement */
+    font-size: 16px; /* Taille de la police du numéro */
+  }
+  
+  /* Style pour le contenu de chaque objectif */
+  .objectives .content {
+    padding-top: 20px; /* Espacement en haut pour le numéro */
+  }
+  
+  /* Style pour le titre de chaque objectif */
+  .objective h3 {
+    margin-bottom: 10px; /* Espacement en bas du titre */
+  }
+  
+  /* Style pour le texte de chaque objectif */
+  .objective p {
+    margin: 0; /* Supprime les marges autour du texte */
+  }
+  
+  /* Styles pour la réactivité */
+  @media (max-width: 768px) {
+    .objective {
+      width: calc(50% - 20px); /* Largeur de chaque objectif pour les écrans moyens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .objective {
+      width: calc(100% - 20px); /* Largeur de chaque objectif pour les petits écrans */
+    }
+  }
+
+
+
+
+/* ce style c'est pour la section de presentation de l'equipe pedagogique */
+.team {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .team h4 {
+    margin-bottom: 20px;
+  }
+  
+  .team-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    width: 300px;
+    margin: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 2s ease;
+  }
+  
+  .team-member.top {
+    order: -1;
+  }
+  
+  .team-member.bottom {
+    order: 1;
+  }
+  
+  .team-member.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+  }
+  
+  .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .member-info h5 {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    margin-top: 15px;
+  }
+  
+  .social-icons a {
+    color: #08a916;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+
+
+
+/* les styles qui suivent sont des styles pour la section d'actualite */
+        /* Styles pour la section actualités */
+        .actualites-section {
+            width: 90%;
+            max-width: 1200px;
+            text-align: center;
+            margin: 50px auto;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .actualites-section a:hover, a:focus{
+            text-decoration: underline;
+            text-decoration-color: green;
+           }
+        
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .images-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: center;
+        }
+        
+        .image-wrapper {
+            position: relative;
+            width: 150%;
+            max-width: 500px;
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 20px;
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Opacité ajustée */
+            color: #fff;
+            padding: 10px;
+            box-sizing: border-box; 
+            border-bottom-right-radius:20px ;
+            border-bottom-left-radius: 20px;
+        }
+        
+        .overlay h5 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        
+        .overlay p {
+            margin: 5px 0 0;
+            font-size: 0.9em;
+        }
+        
+        /* Styles pour le bouton "Plus d'actualités" */
+        .more-news-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: green; /* Couleur de fond verte */
+            color: white; /* Couleur du texte en blanc */
+            text-decoration: none; /* Pas de soulignement */
+            font-size: 1em; /* Taille de police */
+            border-radius: 50px; /* Coins arrondis */
+            transition: background-color 0.3s ease; /* Transition pour changement de couleur */
+            opacity: 0; /* Départ avec opacité 0 pour l'animation */
+            transition: opacity 1s ease-in-out; /* Transition d'opacité pour l'apparition */
+        }
+        
+        .more-news-button:hover {
+            background-color: darkgreen; /* Couleur de fond au survol */
+        }
+        /* Responsivité */
+        @media (min-width: 768px) {
+            .images-container {
+                flex-wrap: nowrap;
+            }
+        }
+
+        
+        /* style pour la video de presentation */
+                /* Style pour la section de la vidéo */
+.video-section {
+    text-align: center;
+    margin: 50px auto;
+    background-color: #08a916;
+}
+
+/* Style pour le titre */
+.video-section h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+.video{
+    padding-top: 40px;
+}
+
+/* Style pour la vidéo */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Rapport hauteur/largeur de 16:9 pour conserver le ratio de la vidéo */
+    
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    width: 70%;
+    height:70%;
+    border-radius: 20px;
+
+}
+
+
+
+  

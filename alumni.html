@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="headerpage.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <style>
+        /* Basic styling */
+        body {
+        margin-top: 90px; /* Hauteur de l'en-tête */
+  }
+
+
+/* Alumni container */
+.alumni-container {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Headings */
+.alumni-container h1 {
+    color: #08a916;
+    margin-bottom: 20px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    background: #08a916;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+
+.tab-link:hover{
+    background: #70d278;
+}
+.tab-link.active {
+    background: darkgreen;
+}
+
+/* Tab content */
+.tab-content {
+    display: none;
+    text-align: left;
+}
+
+.tab-content.active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.student {
+    width: 20%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.student img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.student:hover img {
+    transform: scale(1.1);
+}
+
+.student h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.student p {
+    margin: 5px 0;
+}
+.alumi{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.alumtitle{
+    background-color: #08a916;
+    max-width: 450px;
+    color: #fff;
+    margin-left: 400px;
+    border-radius: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .tabs {
+        flex-wrap: wrap;
+    }
+    .tab-content.active {
+        flex-direction: column;
+    }
+    .student {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .student img {
+        margin-bottom: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+
+    <!-- voici le header -->
+    <header class="header">
+        <div class="header-content"> 
+            <img src="image/CMPM.png" alt="Logo" class="logo">
+            <h1 class="titre">Complexe des Métiers et des Professions des Montagnes</h1> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="alumtitle">
+    <h1 class="alumi">Anciens etudiants</h1>
+</div>
+    <div class="alumni-container">
+        <h1>PROMMOTIONS</h1>
+        <div class="tabs">
+            <button class="tab-link active" data-year="2019">2019</button>
+            <button class="tab-link" data-year="2020">2020</button>
+            <button class="tab-link" data-year="2021">2021</button>
+            <button class="tab-link" data-year="2022">2022</button>
+            <button class="tab-link" data-year="2023">2023</button>
+            <button class="tab-link" data-year="2024">2024</button>
+        </div>
+        <div class="tab-content active" id="2019">
+            <div class="student">
+                <img src="image/fff.jpg" alt="Toma Jean">
+                <h3>Toma Jean</h3>
+                <p> Ingénierie Civile</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Syntia Soho">
+                <h3>Syntia Soho</h3>
+                <p>Architecture</p>
+            </div>
+            <div class="student">
+                <img src="image/345325.jpg" alt="Etudiant 3">
+                <h3>Etudiant 3</h3>
+                <p>Génie Mécanique</p>
+            </div>
+            <div class="student">
+                <img src="image/54645.jpg" alt="Etudiant 4">
+                <h3>Etudiant 4</h3>
+                <p> Informatique</p>
+            </div>
+            <div class="student">
+                <img src="image/fff.jpg" alt="Etudiant 5">
+                <h3>Etudiant 5</h3>
+                <p> Génie Électrique</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Etudiant 6">
+                <h3>Etudiant 6</h3>
+                <p> Génie Industriel</p>
+            </div>
+            <div class="student">
+                <img src="image/345325.jpg" alt="Etudiant 7">
+                <h3>Etudiant 7</h3>
+                <p>Génie Environnemental</p>
+            </div>
+            <div class="student">
+                <img src="image/54645.jpg" alt="Etudiant 8">
+                <h3>Etudiant 8</h3>
+                <p>Ingénierie Civile</p>
+            </div>
+            <div class="student">
+                <img src="image/fff.jpg" alt="Etudiant 9">
+                <h3>Etudiant 9</h3>
+                <p> Architecture</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Etudiant 10">
+                <h3>Etudiant 10</h3>
+                <p>Génie Mécanique</p>
+            </div>
+        </div>
+        <!-- Répétez les sections ci-dessus pour chaque promotion de 2020 à 2024 -->
+        <div class="tab-content" id="2020">
+            <div class="student">
+                <img src="image/fff.jpg" alt="Simon Piére">
+                <h3>Simon Piére</h3>
+                <p>Génie Mécanique</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Syntia Soho">
+                <h3>Syntia Soho</h3>
+                <p> Architecture</p>
+            </div>
+            <div class="student">
+                <img src="image/345325.jpg" alt="Etudiant 3">
+                <h3>Etudiant 3</h3>
+                <p>Génie Mécanique</p>
+            </div>
+            <div class="student">
+                <img src="image/54645.jpg" alt="Etudiant 4">
+                <h3>Etudiant 4</h3>
+                <p> Informatique</p>
+            </div>
+            <div class="student">
+                <img src="image/fff.jpg" alt="Etudiant 5">
+                <h3>Etudiant 5</h3>
+                <p>Génie Électrique</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Etudiant 6">
+                <h3>Etudiant 6</h3>
+                <p>Génie Industriel</p>
+            </div>
+            <div class="student">
+                <img src="image/345325.jpg" alt="Etudiant 7">
+                <h3>Etudiant 7</h3>
+                <p>Génie Environnemental</p>
+            </div>
+            <div class="student">
+                <img src="image/54645.jpg" alt="Etudiant 8">
+                <h3>Etudiant 8</h3>
+                <p> Ingénierie Civile</p>
+            </div>
+            <div class="student">
+                <img src="image/fff.jpg" alt="Etudiant 9">
+                <h3>Etudiant 9</h3>
+                <p> Architecture</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Etudiant 10">
+                <h3>Etudiant 10</h3>
+                <p>Génie Mécanique</p>
+            </div>
+        </div>
+        <div class="tab-content" id="2021">
+            <div class="student">
+                <img src="image/fff.jpg" alt="Jeans Claude">
+                <h3>Jeans Claude</h3>
+                <p> Génie Électrique</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Syntia Soho">
+                <h3>Syntia Soho</h3>
+                <p>: Architecture</p>
+            </div>
+            <div class="student">
+                <img src="image/345325.jpg" alt="Etudiant 3">
+                <h3>Etudiant 3</h3>
+                <p>Génie Mécanique</p>
+            </div>
+            <div class="student">
+                <img src="image/54645.jpg" alt="Etudiant 4">
+                <h3>Etudiant 4</h3>
+                <p>Informatique</p>
+            </div>
+            <div class="student">
+                <img src="image/fff.jpg" alt="Etudiant 5">
+                <h3>Etudiant 5</h3>
+                <p>Génie Électrique</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Etudiant 6">
+                <h3>Etudiant 6</h3>
+                <p>Génie Industriel</p>
+            </div>
+            <div class="student">
+                <img src="image/345325.jpg" alt="Etudiant 7">
+                <h3>Etudiant 7</h3>
+                <p> Génie Environnemental</p>
+            </div>
+            <div class="student">
+                <img src="image/54645.jpg" alt="Etudiant 8">
+                <h3>Etudiant 8</h3>
+                <p>Ingénierie Civile</p>
+            </div>
+            <div class="student">
+                <img src="image/fff.jpg" alt="Etudiant 9">
+                <h3>Etudiant 9</h3>
+                <p> Architecture</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Etudiant 10">
+                <h3>Etudiant 10</h3>
+                <p> Génie Mécanique</p>
+            </div>
+        </div>
+        <div class="tab-content" id="2022">
+            <div class="student">
+                <img src="image/fff.jpg" alt="Sarah Bill">
+                <h3>Sarah Bill</h3>
+                <p> Informatique</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Syntia Soho">
+                <h3>Syntia Soho</h3>
+                <p>Architecture</p>
+            </div>
+            <div class="student">
+                <img src="image/345325.jpg" alt="Etudiant 3">
+                <h3>Etudiant 3</h3>
+                <p>Génie Mécanique</p>
+            </div>
+            <div class="student">
+                <img src="image/54645.jpg" alt="Etudiant 4">
+                <h3>Etudiant 4</h3>
+                <p>Informatique</p>
+            </div>
+            <div class="student">
+                <img src="image/fff.jpg" alt="Etudiant 5">
+                <h3>Etudiant 5</h3>
+                <p>Génie Électrique</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Etudiant 6">
+                <h3>Etudiant 6</h3>
+                <p> Génie Industriel</p>
+            </div>
+            <div class="student">
+                <img src="image/345325.jpg" alt="Etudiant 7">
+                <h3>Etudiant 7</h3>
+                <p> Génie Environnemental</p>
+            </div>
+            <div class="student">
+                <img src="image/54645.jpg" alt="Etudiant 8">
+                <h3>Etudiant 8</h3>
+                <p>Ingénierie Civile</p>
+            </div>
+            <div class="student">
+                <img src="image/fff.jpg" alt="Etudiant 9">
+                <h3>Etudiant 9</h3>
+                <p>Architecture</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Etudiant 10">
+                <h3>Etudiant 10</h3>
+                <p> Génie Mécanique</p>
+            </div>
+        </div>
+        <div class="tab-content" id="2023">
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Paul Cara">
+                <h3>Paul Cara</h3>
+                <p> Génie Industriel</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Syntia Soho">
+                <h3>Syntia Soho</h3>
+                <p>Architecture</p>
+            </div>
+            <div class="student">
+                <img src="image/345325.jpg" alt="Etudiant 3">
+                <h3>Etudiant 3</h3>
+                <p>Génie Mécanique</p>
+            </div>
+            <div class="student">
+                <img src="image/54645.jpg" alt="Etudiant 4">
+                <h3>Etudiant 4</h3>
+                <p> Informatique</p>
+            </div>
+            <div class="student">
+                <img src="image/fff.jpg" alt="Etudiant 5">
+                <h3>Etudiant 5</h3>
+                <p> Génie Électrique</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Etudiant 6">
+                <h3>Etudiant 26</h3>
+                <p> Génie Industriel</p>
+            </div>
+            <div class="student">
+                <img src="image/345325.jpg" alt="Etudiant 7">
+                <h3>Etudiant 17</h3>
+                <p> Génie Environnemental</p>
+            </div>
+            <div class="student">
+                <img src="image/54645.jpg" alt="Etudiant 8">
+                <h3>Etudianta 8</h3>
+                <p>Ingénierie Civile</p>
+            </div>
+            <div class="student">
+                <img src="image/fff.jpg" alt="Etudiant 9">
+                <h3>Etudiant 9f</h3>
+                <p>Architecture</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Etudiant 10">
+                <h3>Etudiant 310</h3>
+                <p> Génie Mécanique</p>
+            </div>
+        </div>
+        <div class="tab-content" id="2024">
+            <div class="student">
+                <img src="image/fff.jpg" alt="Sara Nem">
+                <h3>Sara Nem</h3>
+                <p>Génie Environnemental</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Syntia Soho">
+                <h3>Syntia Soho</h3>
+                <p> Architecture</p>
+            </div>
+            <div class="student">
+                <img src="image/345325.jpg" alt="Etudiant 3">
+                <h3>Etudiant 3</h3>
+                <p>Génie Mécanique</p>
+            </div>
+            <div class="student">
+                <img src="image/54645.jpg" alt="Etudiant 4">
+                <h3>Etudiant 4</h3>
+                <p>Informatique</p>
+            </div>
+            <div class="student">
+                <img src="image/fff.jpg" alt="Etudiant 5">
+                <h3>Etudiant 5</h3>
+                <p> Génie Électrique</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Etudiant 6">
+                <h3>Etudiant 6</h3>
+                <p>Génie Industriel</p>
+            </div>
+            <div class="student">
+                <img src="image/345325.jpg" alt="Etudiant 7">
+                <h3>Etudiant 7</h3>
+                <p>Génie Environnemental</p>
+            </div>
+            <div class="student">
+                <img src="image/54645.jpg" alt="Etudiant 8">
+                <h3>Etudiant 8</h3>
+                <p>Ingénierie Civile</p>
+            </div>
+            <div class="student">
+                <img src="image/fff.jpg" alt="Etudiant 9">
+                <h3>Etudiant 9</h3>
+                <p>Architecture</p>
+            </div>
+            <div class="student">
+                <img src="image/fggf.jpg" alt="Etudiant 10">
+                <h3>Etudiant 10</h3>
+                <p>Génie Mécanique</p>
+            </div>
+        </div>
+    </div>
+
+
+
+ <footer class="footer">
+        <div class="container">
+         <div class="row">
+           <div class="footer-col">
+             <h4>Adresse</h4>
+             <ul>
+               <li><a href="#">Bangante-Mfetum</a></li>
+               <li><a href="#">Bangante-Banekane</a></li>
+               <li><a href="#">cmpmaed@gmail.com</a></li>
+               <li><a href="#">+237 699 526 856</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>Sites</h4>
+             <ul>
+               <li><a href="#">Université des montagne</a></li>
+               <li><a href="#">ISST</a></li>
+               <li><a href="#">ISSS</a></li>
+               <li><a href="#">IEA</a></li>
+               <li><a href="#">CUM</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>Page</h4>
+             <ul>
+               <li><a href="index.html">Acceuil</a></li>
+               <li><a href="about.html">A propo</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="actu.html">Actualite</a></li>
+               <li><a href="#">alumni</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>Contactez-nous</h4>
+             <div class="social-links">
+               <a href="#"><i class="fab fa-facebook-f"></i></a>
+               <a href="#"><i class="fab fa-twitter"></i></a>
+               <a href="#"><i class="fab fa-instagram"></i></a>
+               <a href="#"><i class="fab fa-linkedin-in"></i></a>
+             </div>
+           </div>
+         </div>
+        </div>
+        <div class="footer-bottom">
+            <p> Copyright © NJINE TIENCHEU Elie <span>|</span>elienjine8@gmail.com</p>
+        </div>
+     </footer>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const tabLinks = document.querySelectorAll('.tab-link');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            tabLinks.forEach(link => link.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+
+            this.classList.add('active');
+            document.getElementById(this.getAttribute('data-year')).classList.add('active');
+        });
+    });
+});
+
+    </script>
+</body>
+</html>

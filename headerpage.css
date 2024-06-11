@@ -1,0 +1,99 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(7, 7, 7, 0.5); /* Couleur de fond transparente avec une opacité de 70% */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    gap: 40px; 
+}
+
+.logo {
+    height: 3rem; /* Hauteur du logo */
+}
+
+.titre {
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header nav ul li {
+    margin-right: 1rem;
+}
+
+.header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ /* Media Queries for Responsiveness */
+ @media (max-width: 768px) {
+    .header-content {
+        width: 90%;
+        gap: 20px;
+    }
+
+    .logo {
+        height: 2.5rem; /* Adjusted height for smaller screens */
+    }
+
+    .titre {
+        font-size: 18px;
+        white-space: nowrap; 
+    }
+
+    .header nav ul li {
+        margin-right: 0.5rem;
+        white-space: nowrap; 
+    }
+
+    .header nav a {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        white-space: nowrap; 
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        width: 95%;
+        gap: 10px;
+    }
+
+    .logo {
+        height: 2rem; /* Adjusted height for smaller screens */
+    }
+
+    .titre {
+        font-size: 16px;
+        white-space: nowrap; 
+    }
+
+    .header nav ul li {
+        margin-right: 0.3rem;
+        white-space: nowrap; 
+    }
+
+    .header nav a {
+        font-size: 0.8rem; /* Further adjust font size for smaller screens */
+        white-space: nowrap; 
+    }
+}
